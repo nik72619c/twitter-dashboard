@@ -22,8 +22,8 @@ count: 10}, function(error, tweets, response) {
             console.log('checking tweets response',tweets);
             res.send(tweets);
         }
-        else{
-            console.log(error);
+        else if(error[0].code==34){
+            res.send({code: 34});
         }
      });
 })

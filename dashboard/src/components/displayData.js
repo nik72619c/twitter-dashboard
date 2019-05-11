@@ -2,7 +2,7 @@ import React from 'react';
 function DisplayData(props){
    console.log('tweets final', props.tweets);
         return (
-            <div className="w-50 mx-auto mt-3">
+            <div className="w-75 mx-auto mt-3">
   {props.tweets.length>0 ? <table className="table">
   <thead className="thead-light">
     <tr>
